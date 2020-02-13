@@ -34,7 +34,7 @@ files.set_patterns(RE_LIST)
 
 # Construct the map
 # Pass True to the method to print some infomations when constructing the map.
-# Otherwise you can pass no parameters: filemap.construct_map()
+# Otherwise you can pass no parameters (False by default): filemap.construct_map()
 filemap.construct_map(True)
 
 # You can print result when construction ends.
