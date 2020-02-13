@@ -27,8 +27,8 @@ files.set_dir()
 filemap.input_patterns()
 # Or set regular expressions using a list
 RE_LIST = [
-        '-{1,1}\d+',
-        '\d+'
+	'-{1,1}\d+',
+	'\d+'
 ]
 files.set_patterns(RE_LIST)
 
