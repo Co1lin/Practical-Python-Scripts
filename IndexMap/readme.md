@@ -37,7 +37,7 @@ files.set_patterns(RE_LIST)
 # Otherwise you can pass no parameters (False by default): filemap.construct_map()
 filemap.construct_map(True)
 
-# You can print result when construction ends.
+# You can print the result when construction ends.
 filemap.print_info()
 ```
 
