@@ -37,11 +37,17 @@ class IndexMap(object):
         i -= 1
         print('%d expressions inputted and compiled to patterns.' %i)
 
+    def __process_dir_path_str(self, dir_path):
+        if dir_path[-1] == '/' or dir_path[-1] == '\\':
+            dir_path = dir_path[:-1]
+        return dir_path
+
     def set_dir(self, dir_path):
-        self.dir_path = dir_path
+        self.dir_path = self.__process_dir_path_str(dir_path)
 
     def input_dir(self):
         self.dir_path = input('Please input the directory path. NO quotation marks!\n -> ')
+        self.dir_path = self.__process_dir_path_str(self.dir_path)
         print("Read directory path: %s" % self.dir_path)
 
     def __get_index(self, name):
