@@ -15,6 +15,9 @@ This program can be used to iterate files in a specifc order. For example, you  
 # Usage
 
 ```python
+# Import the module
+from IndexMap import IndexMap
+
 # Construct an object
 filemap = IndexMap()
 
